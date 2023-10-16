@@ -1,0 +1,15 @@
+declare
+str varchar2(30):='&str';
+str1 varchar2(30);
+len number;
+ch varchar2(1);
+i number;
+begin
+len:=length(str);
+for i in reverse 1..len
+loop
+ch:= substr(str,i,1);
+str1:=str1 || ch;
+end loop;
+dbms_output.put_line('Reversing string is ' || str1);
+end;

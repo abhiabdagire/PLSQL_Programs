@@ -1,0 +1,10 @@
+declare num1 number:=&num1;
+fact number:=1;
+i number;
+begin
+for i in 1..num1
+loop
+fact:= fact*i;
+end loop;
+dbms_output.put_line(num1 || '! is '|| fact);
+end;

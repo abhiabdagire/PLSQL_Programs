@@ -1,0 +1,10 @@
+declare
+num1 number:= &n1;
+num2 number:= &n2;
+sum1 number:= 0;
+
+begin
+sum1 := num1 + num2;
+
+dbms_output.put_line('Addition= '||sum1);
+end;
